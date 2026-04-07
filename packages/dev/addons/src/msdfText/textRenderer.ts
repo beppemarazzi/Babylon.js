@@ -268,7 +268,7 @@ export class TextRenderer implements IDisposable {
     /**
      * Clear all paragraphs from the renderer to allow adding new ones from scratch
      */
-    public clearParagraphs(){
+    public clearParagraphs(): void {
         this._charMatrices.length = 0;
         this._charUvs.length = 0;
         this._baseLine = 0;
